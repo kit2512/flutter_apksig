@@ -1,0 +1,38 @@
+name: flutter_apksig
+description: >-
+  Verify and sign Android APK files using the apksig-android library.
+  Supports JAR signing (v1), APK Signature Scheme v2/v3/v4, certificate
+  fingerprint verification, and keystore-based signing.
+version: 0.0.1
+homepage: https://github.com/kit2512/flutter_apksig
+repository: https://github.com/kit2512/flutter_apksig
+issue_tracker: https://github.com/kit2512/flutter_apksig/issues
+
+topics:
+  - apk
+  - android
+  - signing
+  - security
+  - verification
+
+environment:
+  sdk: ^3.11.5
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  pigeon: ^22.7.4
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.flutter_apksig
+        pluginClass: FlutterApksigPlugin
